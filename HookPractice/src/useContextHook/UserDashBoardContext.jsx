@@ -3,15 +3,16 @@ import Users from "./Users";
 import UserContext from "../context/UserContext";
 
 const UserDashBoardContext = () => {
+  const [user, setUser] = useState("milan");
   const users = {
-    username: "milan",
+    username: user,
+    updateName: setUser,
   };
 
   return (
     <>
       <UserContext.Provider value={users}>
         <div>UserDashBoardContext</div>
-
         <Users />
       </UserContext.Provider>
     </>
