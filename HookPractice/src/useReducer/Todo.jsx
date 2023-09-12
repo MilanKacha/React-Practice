@@ -10,7 +10,6 @@ function reducer(state, action) {
     case "DELETE_TASK":
       return state.filter((d) => d.id !== action.payload);
 
-    case "UPDATE_TASK":
     default:
       return state;
   }
