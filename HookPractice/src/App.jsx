@@ -1,10 +1,9 @@
-import User from "./useMemoHook/User";
-import Todo from "./useReducer/Todo";
+import UseCallBackHook from "./useCallbackHook/UseCallBackHook";
 
 function App() {
   return (
     <>
-      <User />
+      <UseCallBackHook />
     </>
   );
 }
